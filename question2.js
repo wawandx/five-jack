@@ -23,7 +23,7 @@ function solution(n, users) {
     let totalUsers = users.length;
     let arrayFailedRate = [];
     for (let i = 1; i < n+1; i++) {
-        const result = users.filter(user => user == i); //mencari banyaknya stages yang diselesaikan berdasarkan stages terakhir
+        const result = users.filter(user => user == i); //mencari banyaknya stages yang diselesaikan berdasarkan stages
         stages.push(result.length)
         if (i == n) {
             arrayFailedRate = failedRate(stages, totalUsers)
